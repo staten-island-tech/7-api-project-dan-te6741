@@ -5,10 +5,8 @@ def getslime(slime):
     if response.status_code != 200:
         return None
     data = response.json()
-    print(data)
-    slimedata = [data['results']]
-    print(slimedata['name'])
     
+
 
 slimer = getslime("pink")
 print(slimer)
